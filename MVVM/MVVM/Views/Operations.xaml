@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM.Views.Operations">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Valor 1" />
+                <Editor Text="{Binding Valor1}"></Editor>
+                <Label Text="Valor 2"/>
+                <Editor Text="{Binding Valor2}"></Editor>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Sumar" Command="{Binding Sumar}"/>
+                <Label Text="{Binding ResultSuma}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Restar" Command="{Binding Restar}"/>
+                <Label Text="{Binding ResultResta}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Multiplicar" Command="{Binding Multiplicar}"/>
+                <Label Text="{Binding ResultMultiplicar}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Dividir" Command="{Binding Dividir}"/>
+                <Label Text="{Binding ResultDividir}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
